@@ -87,6 +87,24 @@ comandos necesarios para que se realice el realce sintáctico en Python del mism
 vale insertar una imagen o una captura de pantalla, debe hacerse en formato *markdown*).
 
 ```python
+"""
+    Tercera tarea de APA - manejo de vectores
+
+    Nombre y apellidos: Gerard Cots y Joel Joan Morera
+
+    Test unitarios
+
+    >>> Vector([1, 2, 3]) * 2
+    Vector([2, 4, 6])
+    >>> Vector([1, 2, 3]) * Vector([4, 5, 6])
+    Vector([4, 10, 18])
+    >>> Vector([1, 2, 3]) @ Vector([4, 5, 6])
+    32
+    >>> Vector([2, 1, 2]) // Vector([0.5, 1, 0.5])
+    Vector([1.0, 2.0, 1.0])
+    >>> Vector([2, 1, 2]) % Vector([0.5, 1, 0.5])
+    Vector([1.0, -1.0, 1.0])
+"""
     def __mul__(self, other):
         """
         Producto de Hadamard del vector por otro vector o una constante.
